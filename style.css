@@ -1,0 +1,187 @@
+/* Import Cyberpunk Font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Glitch Effect */
+.glitch-text {
+    font-size: 18px;
+    font-family: 'VT323', monospace;  /* Hacker-style font */
+    color: #0ff;
+    position: relative;
+    text-transform: uppercase;
+    animation: glitch 1.5s infinite alternate;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+    0% { text-shadow: 4px 4px #ff00ff, -4px -4px #00ffff; }
+    25% { text-shadow: -4px -4px #ff00ff, 4px 4px #00ffff; }
+    50% { text-shadow: 4px -4px #ff00ff, -4px 4px #00ffff; }
+    75% { text-shadow: -4px 4px #ff00ff, 4px -4px #00ffff; }
+    100% { text-shadow: 4px 4px #ff00ff, -4px -4px #00ffff; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    cursor: url('cursor.png'), auto; /* Custom Cursor */
+}
+
+/* Matrix Background */
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Main Container */
+.maincontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Cool Neon Username */
+.neon-username {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: cyan;
+    text-decoration: none;
+    text-shadow: 0 0 10px cyan, 0 0 30px cyan, 0 0 50px blue;
+    animation: neon-glow 1.5s infinite alternate;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 10px cyan, 0 0 30px cyan, 0 0 50px blue; }
+    100% { text-shadow: 0 0 20px cyan, 0 0 50px blue, 0 0 70px white; }
+}
+
+/* Hover Effect */
+.neon-username:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 20px #ff00ff, 0 0 40px purple, 0 0 60px white;
+    transform: scale(1.1);
+}
+
+@keyframes neon-flicker {
+    0% { text-shadow: 0 0 5px #0ff, 0 0 20px cyan, 0 0 40px blue; }
+    100% { text-shadow: 0 0 20px cyan, 0 0 40px blue, 0 0 60px white; }
+}
+
+/* Glitch Effect */
+.glitch {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: skew(-5deg); }
+    50% { transform: skew(5deg); }
+    100% { transform: skew(-5deg); }
+}
+
+/* Neon Social Buttons */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 95%;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.neon {
+    font-weight: bold;
+    color: white;
+    border: 2px solid;
+    box-shadow: 0 0 5px, 0 0 25px;
+    text-shadow: 0 0 5px, 0 0 20px;
+    transition: 0.5s;
+}
+
+.instagram { border-color: #E1306C; box-shadow: 0 0 15px #E1306C; }
+.telegram { border-color: #0088cc; box-shadow: 0 0 15px #0088cc; }
+.youtube { border-color: #FF0000; box-shadow: 0 0 15px #FF0000; }
+.hacking { border-color: #ff7b00; box-shadow: 0 0 15px #ff7b00; }
+.website { border-color: #5f27cd; box-shadow: 0 0 15px #5f27cd; }
+
+.neon:hover {
+    box-shadow: 0 0 30px, 0 0 60px;
+    transform: scale(1.1);
+}
+
+/* Hacker Image */
+.hacker-container {
+    margin-top: 50px;
+}
+
+.hacker-glow {
+    width: 150px;
+    filter: drop-shadow(0 0 30px cyan);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hacker-glow:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 50px cyan);
+}
+#custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: cyan;
+    padding: 20px;
+    border: 2px solid cyan;
+    box-shadow: 0 0 15px cyan;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    animation: hacker-glitch 0.5s infinite alternate;
+}
+
+@keyframes hacker-glitch {
+    0% { text-shadow: 2px 2px red; }
+    50% { text-shadow: -2px -2px blue; }
+    100% { text-shadow: 2px -2px lime; }
+}
+
+#custom-popup button {
+    background: cyan;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px cyan;
+}
+
+#custom-popup button:hover {
+    background: magenta;
+    box-shadow: 0 0 20px magenta;
+}
