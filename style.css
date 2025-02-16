@@ -121,11 +121,11 @@
     transition: 0.5s;
 }
 
-.instagram { border-color: #E1306C; box-shadow: 0 0 15px #E1306C; }
-.telegram { border-color: #0088cc; box-shadow: 0 0 15px #0088cc; }
-.youtube { border-color: #FF0000; box-shadow: 0 0 15px #FF0000; }
-.hacking { border-color: #ff7b00; box-shadow: 0 0 15px #ff7b00; }
-.website { border-color: #5f27cd; box-shadow: 0 0 15px #5f27cd; }
+.instagram { border-color: #E1306C; box-shadow: 0 0 15px; cursor: pointer; }
+.telegram { border-color: #0088cc; box-shadow: 0 0 15px; cursor: pointer; }
+.youtube { border-color: #FF0000; box-shadow: 0 0 15px; cursor: pointer; }
+.hacking { border-color: #ff7b00; box-shadow: 0 0 15px; cursor: pointer; }
+.website { border-color: #5f27cd; box-shadow: 0 0 15px; cursor: pointer; }
 
 .neon:hover {
     box-shadow: 0 0 30px, 0 0 60px;
