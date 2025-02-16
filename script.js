@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const matrix = "12345678908450895798";
+const matrix = "12345678900987654321";
 const columns = canvas.width / 20;
 const drops = Array(Math.floor(columns)).fill(1);
 
